@@ -1,0 +1,6 @@
+div :nth-of-type(3) { color : green !important;}
+
+/*하지만 이렇게 !important  를 적어서 강제로 바꾸는건 적용 순서 상관없이 그냥 다 바꿔버림*/
+
+
+

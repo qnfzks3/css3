@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title> CSS3 개요 </title>
+    <link rel="stylesheet" href="css/01hellocss.css">
+  <head>
+    <h1>css3 개요 </h1>
+    <style>
+      div {color:blue}
+      <!--어떤 스타일을 전체적으로 특성을 지정선언-->
+    </style>
+    <!--외부에서 어떤 스타일 시트를 가져올지 선택 - 보통 스타일 시트는 적용할 파일명과 동일하게 하는게 국룰이래-->
+    <!--또 위에 div {color:blue}로 설정 했지만 스타일 바로 아래에
+    <link rel="stylesheet" href="css/01hellocss.css">가 있어서 처음 파랑으로 바꿧다가 아래 그린으로 또 바뀜-->
+  </head>
+</head>
+<body>
+      <h1>css3 개요 </h1>
+      <h2>스타일 시트 stylesheet</h2>
+      <p>웹 페이지의 스타일과 내용적인 부분을
+         서로 분리해서 내용에 디자인을 적용하기 위해
+         작성하는 서식을 의미</p>
+      <p>문서작성과 디자인을 분리하면
+         1. 협업, 스타일 변경시 유지보수 용이
+         2. 태그만으로 구현할 수 없는 기능 수행
+         3. 전송및 로딩 시간 단축 </p>
+      <p>CSS1 : 1996, CSS2 : 1998, CSS3: 2005</p>
+      <h2> css3 문법 </h2>
+      <img src="img/css3.png" width="45%">
+      <p>선택자 selector : 스타일을 적용하고자 하는 대상(html요소)을 의미</p>
+      <p>선언블록 : 하나 이상의 css 선언문을 의미, 선언문은 보통 속성과 속성값으로 구성, 각 선언문은 ;으로 구분 </p>
+      <p>속성 : 스타일을 설정할 수 있는 개별 항목을 의미</p>
+      <p>속성값 : 스타일에 적용 가능한 키워드나 값, 단위를 의미</p>
+
+      <h2>css 사용위치 </h2>
+      <p>인라인 스타일시트 : html 요소 내에 style이라는 속성을 이용해서 css 스타일을 적용하는 방법</p>
+      <p>내부 스타일시트 : html문서의 head 태그 내에 style이라는 태그를 사용해서 CSS 스타일을 적용하는 방법
+          (지역적 스타일 적용 : 특정 파일 대상)</p>
+      <p>외부 스타일시트: html문서의 head 태그 내에 link이라는 태그를 사용해서 외부 css파일을 통해
+      CSS 스타일을 적용하는 방법 (추천!)
+      (전역적 스타일 적용 : 여러 파일 대상)</p>
+
+      <div style="color: red"> 시간은 금이라구, 친구!!</div>
+      <div> 시간은 금이라구, 친구!!</div>
+      <div> 시간은 금이라구, 친구!!</div>
+      <p>이렇게 파란색으로 지정되지 않은 div 안에 style로 지정되지 않은 글들은 위에 head 부분에서 정의한 대로 간다.
+        div {color:blue}  이말은 따로 지정하지않으면 모든 div는 파란색이다.라는 말임</p>
+
+
+      <h2>css 우선 순위</h2>
+      <img src="img/priority.png" width="45%">
+      <p>스타일 적용에 영향을 받을지 알 수 있음</p>
+      <p>스타일 적용순서는 cascading 이라는 용어처럼 위에서 아래 순서대로 순차적으로 반영됨 (선언된 순서에 영향을 받기도 함)</p>
+      <p>한편, 이러한 우선 순위를 무시하고 우선적으로 스타일을 적용하고 싶으면 !important 지시자를 사용하면 됨</p>
+
+
+</body>
+</html>
