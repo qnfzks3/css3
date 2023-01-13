@@ -12,18 +12,19 @@
         /*border-spacing: 0;*/
         border-collapse: collapse;
       }
-      .tb1 th, .tb1 td { }
+      .tb1 th, .tb1 td {border: 1px solid black;
+        padding: 10px; text-align: center }
       /*테이블 크기 고정*/
       #tb2 { width: 300px; table-layout: fixed }
       #tb2 td:first-child{ width: 30%; }
-      #tb2 td:first-child{ overflow: hidden; text-overflow: ellipsis }
+      #tb2 td:last-child{ overflow: hidden; text-overflow: ellipsis }
 
 
       #tb3 {width: 500px; height: 300px;}
       #tb3 td {border: 1px solid black;}
        #tb3 tr:last-child td {vertical-align: top;}
       #tb3 tr:nth-child(2) td {vertical-align: bottom;}  /*위 가운데 아래 배치가 가능하도록 배치 vertical-align*/
-       #tb3 tr:first-child td {vertical-align: middle}
+       #tb3 tr:first-child td {vertical-align: middle; text-align: center}
 
 
 
