@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/normalize.css">                <!--그래서 project 밖에 있는 css 파일을 가져와서 써야할때는 뒤에 ../을 해서 밖에서 가져온다 를 써줘야함-->
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        #container {border: 1px solid red; width: 950px; margin: 0 auto;}  /*너비 설정,가운데 배치(창을 줄이건 이동하건 자동),테두리 표시*/
+        #container {border: 1px solid black; width: 950px; margin: 0 auto;}  /*너비 설정,가운데 배치(창을 줄이건 이동하건 자동),테두리 표시*/
         header{ border: 1px solid darkred; position: relative; height: 100px; } /*높이 지정, 테두리 표시 상대적 좌표*/     /*- 그냥 헤더 자체 그러니 헤더 자체가 상대좌표가 되면 아래는?*/
         header ul{ list-style: none; padding: 0; margin: 0;position: absolute; top: 5px; right: 5px}
         /*리스트의 항목을 inline요소로 바꿈*/       /*- 헤더 안에 있는 유엘*/
@@ -44,7 +44,7 @@
 
 /*그냥 쉽게 생각 하자 retative는 의미상 상대 의미이긴 하지만  기준 하위 객체의 기준 이다 라고 보면 될듯*/
 
-        main {border: 1px solid darkred;position: relative;  }
+        main {/*border: 1px solid darkred;position: relative; */ }
         section:first-child {
             border: 3px solid black;
             position: relative;
@@ -113,7 +113,31 @@
         }
         section:last-child ul a {display: inline-block; text-align: center; }
 
+        /*밑에 링크하면 밑줄도있고 색도 파란색이다 그래서 스타일을 바꿔보자*/
+        a:link{color: black;}
+        a:visited{color: black;}
+        a:hover{color: red;}
+        a:active{color: orange;}
 
+
+        /*꼬릿글 : 블록요소를 인라인요소로 변경, 수직정렬 지정*/
+        footer ul{
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        /*꼬릿글 영역 경계선 표시*/
+        footer {border-top:1px solid black;}
+
+        /*첫번째 푸터메뉴 마진 설정,  푸터 머릿글 마진설정*/
+        footer ul:first-child {margin-left: 12px;}
+        footer ul li:first-child h3 {margin: 0;}
+
+        /*꼬릿글에 카트라이트~~ */
+
+        footer div:last-child {text-align: center; margin-top: 35px;}
 
 
     </style>
@@ -202,30 +226,30 @@
 
     </main>
         <footer>
-        <div>
-            <ul>
-                <li><h3>ABOUT US</h3></li>
-                <li>Company</li>
-                <li>News</li>
-                <li>Jobs</li>
-                <li>Policies</li>
-                <li>Contact</li>
-            </ul>
-            <ul>
-                <li><h3>SOCIAL</h3></li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Try our app</li>
-            </ul>
-            <ul>
-                <li><h3>SERVICE</h3></li>
-                <li>FAQ</li>
-                <li>live support</li>
-                <li>Site map</li>
-            </ul>
+            <div>
+               <ul>
+                  <li><h3>ABOUT US</h3></li>
+                    <li>Company</li>
+                    <li>News</li>
+                    <li>Jobs</li>
+                   <li>Policies</li>
+                   <li>Contact</li>
+               </ul>
+                <ul>
+                    <li><h3>SOCIAL</h3></li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Try our app</li>
+                </ul>
+                <ul>
+                    <li><h3>SERVICE</h3></li>
+                    <li>FAQ</li>
+                    <li>live support</li>
+                    <li>Site map</li>
+                </ul>
 
-        </div>
-        <div>copyright &nbsp; statement</div>
+         </div>
+         <div>copyright &nbsp; statement</div>
     </footer>
     </div>
 <hr>
