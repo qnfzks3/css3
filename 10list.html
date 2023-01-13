@@ -18,12 +18,12 @@
     /*list-style-position : 글머리기호의 위치를 설정*/
     #menu {
       list-style-image: url('img/grape.png');
-      list-style-position:inside;
+      list-style-position:inside;  목록을 제목 안쪽으로 넣어서 작성한다 outside로 바꾼다면 제목 바깥으로
       padding: 0;
     }
 
-    #maker {list-style: none}
-    #maker li{list-style: inside url("img/grape.png ")}
+    #maker {list-style: none;padding: 0;}
+    #maker li{list-style: inside url("img/grape.png "); }
 
 
 
@@ -34,7 +34,7 @@
 <body>
     <h1>CSS 리스트 관련</h1>
     <h2>개요</h2>
-    <p>순서있는(없는) 리스트를 스타일링 시 글 머리기호를 제러하거나 이미지로 대체 할 수 있음</p>
+    <p>순서있는(없는) 리스트를 스타일링 시 글 머리기호를 제거하거나 이미지로 대체 할 수 있음</p>
     <ul id="game">
       <li>디아블로</li>
       <li>스타크래프트</li>
