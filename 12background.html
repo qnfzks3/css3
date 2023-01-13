@@ -81,7 +81,7 @@
           background: url("img/img_navsprites.gif") 0 -45px;
       }
       #box15 {
-          background: url("img/img_navsprites.gif") -46px 0px;
+          background: url("img/img_navsprites.gif") -46px 0;
       }
       #box15:hover{
           background: url("img/img_navsprites.gif") -46px -46px;
@@ -94,6 +94,31 @@
       #box16:hover{
           background: url("img/img_navsprites.gif") 45px -45px;
       } /*더이상 왼쪽으로 그림이 없다면 그림의 맨 마지막으로 좌표가 이동*/
+
+      #box17,#box18,#box19 {
+          width: 450px; height: 150px;
+          margin: 35px;
+
+      }
+      /*linear-gradient (방향 , 색1, 색2 ,...)*/
+      #box17{ background: linear-gradient(to right,blue , pink,red)}
+      /*방향을 지정하지않으면 상하 로 그라데이션임 */
+      #box18{ background: linear-gradient(blue , pink,red)}
+      #box19{ background: linear-gradient(to right,red ,orange,yellow,green,blue,darkblue,purple)}
+
+      #box20,#box21 {
+          width: 250px; height: 250px;
+          margin: 25px 0;
+      }
+
+        /*중심에서 바깥으로 그라데이션*/
+      #box20 {
+          background: radial-gradient(red,yellow);
+      }
+      #box21 {
+          background: radial-gradient(red ,orange,yellow,green,blue,darkblue,purple);
+      }
+
 
     </style>
 
@@ -160,6 +185,17 @@
 
     <div id="box15">&nbsp;</div>
     <div id="box16">&nbsp;</div>
+
+
+    <h2> 그라디언트</h2>
+    <p> 두가지 이상의 색이 점점 변화 하게 하는 기법</p>
+    <p>그라디언트의 종류는 선형 , 방사형, 각진원형등이 있음</p>
+
+    <div id="box17">  </div>
+    <div id="box18">  </div>
+    <div id="box19">  </div>
+    <div id="box20">  </div>
+    <div id="box21">  </div>
 
 
 
