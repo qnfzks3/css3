@@ -152,10 +152,12 @@ a<sup>2</sup>=b<sup>2</sup> + c<sup>2</sup> <br>
 * 수식을 작성하려면 $$ 기호를 사용
 * 자세한 latex 설명은 링크 참조
 * https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95
+* 온라인에서 간단히 latex 문법을 확인하고 싶다면 
+* https://editor.codecogs.com를 참고함
 ---
 $a^2=b^2+c^2$
 
-$$x=(-b^2+-(b^2-4ac)^(1/2))/2a $$
+x={-b\pm \sqrt{a+b}\over2a}
 
 
 * 주피터 노트북등에 문서 작성시 내용전달시 이해하기 쉽도록 추가적으로 작성하는 꾸밈 문장을 마크다운을 이용해서 작성함
