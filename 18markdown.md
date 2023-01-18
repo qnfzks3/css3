@@ -155,9 +155,9 @@ a<sup>2</sup>=b<sup>2</sup> + c<sup>2</sup> <br>
 * 온라인에서 간단히 latex 문법을 확인하고 싶다면 
 * https://editor.codecogs.com를 참고함
 ---
-$a^2=b^2+c^2$
+### $a^2=b^2+c^2$ <br>
 
-$$x={-b\pm \sqrt{a+b}\over2a}$$
+### $$x={-b\pm \sqrt{a+b}\over2a}$$  
 
 
 * 주피터 노트북등에 문서 작성시 내용전달시 이해하기 쉽도록 추가적으로 작성하는 꾸밈 문장을 마크다운을 이용해서 작성함
