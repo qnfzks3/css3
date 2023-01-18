@@ -153,7 +153,7 @@ a<sup>2</sup>=b<sup>2</sup> + c<sup>2</sup> <br>
 * 자세한 latex 설명은 링크 참조
 * https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95
 ---
-$ a^2=b^2+c^2$
+$a^2=b^2+c^2$
 
 * 주피터 노트북등에 문서 작성시 내용전달시 이해하기 쉽도록 추가적으로 작성하는 꾸밈 문장을 마크다운을 이용해서 작성함
 * 이러한 종류의 문서는 보통 .md라는 확장자를 가짐
