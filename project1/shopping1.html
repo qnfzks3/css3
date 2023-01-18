@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/normalize.css">                <!--그래서 project 밖에 있는 css 파일을 가져와서 써야할때는 뒤에 ../을 해서 밖에서 가져온다 를 써줘야함-->
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        #container {border: 1px solid black; width: 950px; margin: 0 auto;}  /*너비 설정,가운데 배치(창을 줄이건 이동하건 자동),테두리 표시*/
+        #container {border: 3px solid black; width: 950px; margin: 0 auto;}  /*너비 설정,가운데 배치(창을 줄이건 이동하건 자동),테두리 표시*/
         header{ border: 1px solid darkred; position: relative; height: 100px; } /*높이 지정, 테두리 표시 상대적 좌표*/     /*- 그냥 헤더 자체 그러니 헤더 자체가 상대좌표가 되면 아래는?*/
         header ul{ list-style: none; padding: 0; margin: 0;position: absolute; top: 5px; right: 5px}
         /*리스트의 항목을 inline요소로 바꿈*/       /*- 헤더 안에 있는 유엘*/
@@ -19,7 +19,7 @@
         /*여기서 라이트는 해더의 기준이 돼야하는데 라이트로해버리면 창 끝으로 인식한다. 또 ul 이 아니라 li 이기 때문에 다 겹쳐버린다. ul로 이동하게 해야함*/
         /*또한, 이렇게 하면 해더에 있는 리스트들은 헤더 밖으로 나가게 된다 그렇기 때문에 우린 엡솔루트가(절대) 아닌 릴레이티브 (상대) 로 값을 변경하자*/
 
-        header ul li:after   { content: ' |' }   /*li 항목 끝에 |를 추가해준다.*/
+        header ul li:after  { content: ' |' }   /*li 항목 끝에 |를 추가해준다.*/
         header ul li:last-child:after   { content: ' ' } /*마지막 요소는 |가 없어야하기때문에 따로 빼서 지정한다.*/
 
         header  div {position: absolute; top: 65px; left: 160px;}
@@ -108,10 +108,10 @@
 
         section:last-child ul li{display: inline-block; margin-left: 4.5% }
         /*상품 링크 - 이미지크기 , 배경지정    인라인 요소를 블록 요소로 변경*/
-        section:last-child ul img{
+        section:last-child div ul li img {
             width: 100px; height: 100px; background: #cccccc; border: 1px solid #cccccc;
         }
-        section:last-child ul a {display: inline-block; text-align: center; }
+        section:last-child div ul li a {display: block; text-align: center; }
 
         /*밑에 링크하면 밑줄도있고 색도 파란색이다 그래서 스타일을 바꿔보자*/
         a:link{color: black;}
@@ -125,7 +125,6 @@
             list-style: none;
             display: inline-block;
             vertical-align: top;
-
         }
 
         /*꼬릿글 영역 경계선 표시*/
@@ -138,8 +137,6 @@
         /*꼬릿글에 카트라이트~~ */
 
         footer div:last-child {text-align: center; margin-top: 35px;}
-
-
     </style>
 </head>
 
@@ -199,26 +196,33 @@
         <section>
             <div>
                 <h2>Today's Specials</h2>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product1</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product2</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product2</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product3</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product4</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product5</a> </li>
-                </ul>
-                <ul><li><img src="#"> </li>
-                    <li><a href="#">product6</a> </li>
+                <ul>
+                    <li>
+                        <img src="#">
+                        <a href="#">product1</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a href="#">product2</a>
+                    </li>
+
+                    <li>
+                        <img src="#">
+                        <a href="#">product3</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a href="#">product4</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a href="#">product5</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a href="#">product6</a>
+                    </li>
+
                 </ul>
 
             </div>
